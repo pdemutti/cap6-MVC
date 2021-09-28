@@ -7,17 +7,6 @@
   <build>
     <plugins>
       <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.1</version>
-        <configuration>
-          <release>16</release>
-        </configuration>
-      </plugin>
-      <plugin>
-        <artifactId>maven-war-plugin</artifactId>
-        <version>3.2.3</version>
-      </plugin>
-      <plugin>
             <groupId>org.apache.tomcat.maven</groupId>
             <artifactId>tomcat-maven-plugin</artifactId>
             <version>10.0.11</version>
