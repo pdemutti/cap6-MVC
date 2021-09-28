@@ -17,6 +17,12 @@
         <artifactId>maven-war-plugin</artifactId>
         <version>3.2.3</version>
       </plugin>
+      <plugin>
+            <groupId>org.apache.tomcat.maven</groupId>
+            <artifactId>tomcat-maven-plugin</artifactId>
+            <version>10.0.11</version>
+        </plugin>
     </plugins>
+    
   </build>
 </project>
