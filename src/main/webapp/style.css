@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+
+.unstyled {
+    -webkit-appearance: none;
+}
+
+.unstyled::-webkit-inner-spin-button,
+.unstyled::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+:root {
+    --color-primary: #055240;
+    --color-secondary: #109C68;
+    --color-white: #fff;
+    --color-gray: #ddd;
+    font-size: 16px;
+    font-family: 'Roboto';
+}
+
+
+body {
+    font-family: 'Roboto';
+}
+
+.flex {
+    display: flex;
+}
+
+.content {
+    padding: 0 1rem;
+}
+
+.header {
+    display: flex;
+    margin: 1rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header__acessibilidade__lista {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.header__acessibilidade__lista li {
+    margin-left: 0.2rem;
+}
+
+.header__acessibilidade__lista a {
+    color: var(--color-primary);
+}
+
+.header__acessibilidade__lista li button {
+    padding: 0;
+    border-radius: 50%;
+    display: block;
+    height: 20px;
+    width: 20px !important;
+}
+
+.header__acessibilidade__lista li:nth-child(5),
+li:nth-child(7) {
+    margin-left: 20px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.hero {
+    background-color: var(--color-primary);
+    padding: 1rem 0;
+}
+
+h1 {
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.hero__logo {
+    display: flex;
+    justify-content: center;
+}
+
+.icon__search-input {
+    top: 11px;
+    right: 13px;
+}
+
+.botoes__md {
+}
+
+.covid {
+    display: flex;
+    background-color: #ECF1CC;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+.covid p {
+    font-size: 0.8rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.anuncio {
+    margin: 1rem 0;
+}
+
+.categoria {
+    align-items: center;
+}
+
+.hero__menu__items {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-white);
+    height: 100%;
+    align-items: center;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.hero__menu__items li {
+    width: 18%;
+    text-align: center;
+    height: 35px;
+}
+
+.hero__menu__items li:hover {
+    border-bottom: 5px solid var(--color-secondary);
+}
+
+.hero__menu__items-active {
+    border-bottom: 5px solid var(--color-secondary);
+}
+
+.hero__menu__items li a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.texto {
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+.form {
+    padding: 1rem 0;
+    justify-content: center;
+}
+
+.titulo {
+    color: var(--color-primary);
+    border-bottom: 1px solid rgba(0, 79, 50, 0.31);
+    margin: 1rem 0;
+}
+
+.filter__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+}
+
+/* footer */
+.rodape {
+    background-color: var(--color-gray);
+    margin-top: 1rem;
+    padding: 1rem 0;
+}
+
+.rodape__redessociais ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape__redessociais ul li {
+    margin: 0.2rem 0.4rem;
+}
+
+.rodape__link ul {
+    list-style: none;
+}
+
+.rodape__link ul li a {
+    color: #010101;
+}
+
+.rodape__direitos p {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.filter__button button {
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background-color: var(--color-secondary);
+    min-height: 100%;
+    width: 3rem;
+}
+
+.filter__inputs {
+    width: 100%;
+}
+
+.filter__inputs input,
+.filter__inputs select {
+    border: 1px solid var(--color-secondary);
+    background-color: rgba(0, 79, 50, 0.19);
+    padding-left: 30px;
+}
+
+.filter__inputs_where {
+    background: url("assets/hotel.svg") no-repeat scroll 5px 3px;
+}
+
+.filter__inputs_calendar {
+    background: url("assets/calendar_today.svg") no-repeat scroll 5px 3px;
+}
+
+.filter__inputs_person {
+    background: url("assets/person.svg") no-repeat scroll 5px 3px;
+    background-size: 20px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 250px;
+}
+
+
+.card {
+    flex-direction: row;
+    max-width: 500px;
+    border-radius: 20px;
+    width: 100%;
+    background-color: #f3f3f3;
+}
+
+.card__rating {
+    list-style: none;
+    display: flex;
+}
+
+.card__image {
+    background-image: url("./assets/IBIS.png");
+    background-size: cover;
+    border-radius: 20px 0 0 20px;
+    margin: 0;
+}
+.card__image1{
+    background-image: url(./assets/blue.png);
+}
+.card__image2{
+    background-image: url(./assets/confort.png);
+}
+.card__rating__star img {
+    width: 20px;
+}
+
+.card__botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-card {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px;
+}
+
+
+.btn__secondary {
+    background: var(--color-primary);
+    border: 1px solid var(--color-secondary);
+    color: var(--color-white);
+    border-radius: 2px;
+}
+
+.special-padding {
+    padding-left: 30%;
+    padding-right: 0;
+}
+
+
+.float__button {
+    border: none;
+    background-color: var(--color-primary);
+    width: 40px;
+    text-align: center;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    transform: rotate(-90deg);
+    font-weight: bold;
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.float__button:focus {
+    outline: none;
+}
+
+
+/* <= MOBILE */
+@media screen and ( max-width: 550px) {
+    .special-padding {
+        padding: 0;
+    }
+
+    .container-card {
+        margin: 0;
+    }
+    
+}
+
+
+/* >= TABLED */
+@media screen and ( min-width: 550px) {
+    .filter__wrapper {
+        height: 40px;
+    }
+    
+    .filter__inputs input {
+        min-height: 100%;
+    }
+    
+    .filter__inputs {
+        display: flex;
+    }
+
+    .filter__inputs > div {
+        flex: 1;
+    }
+    
+    .filter__inputs_person, .filter__inputs_calendar, .filter__inputs_where{
+        background-position: 5px 9px;
+    }
+    
+}
+
+.parceiro__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.parceiro__header__detail {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.parceiro__detalhes {
+    display: flex;
+}
+
+.parceiro__detalhes_direita {
+    padding: 0 20px;
+}
+
+.star-icon {
+    width: 20px;
+}
+
+.card_avaliacao {
+    border: 1px dashed grey;
+    padding: 10px;
+    margin-bottom: 10px;
+}
