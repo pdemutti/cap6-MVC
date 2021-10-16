@@ -13,7 +13,7 @@ Sessões do site organizado por feature
 
 ## APLICAÇÃO NO AR - Cap 6
 
-![printscreen Parceiro](https://github.com/llmdev/cap5-backend-mvc/blob/master/src/main/webapp/assets/screen.PNG?raw=true)
+![printscreen Parceiro](https://github.com/llmdev/cap5-backend-mvc/blob/master/src/main/webapp/assets/nova-tela.png?raw=true)
 
 Utilizamos o padrao MVC para trazer informacoes sobre nossos parceiros
 
