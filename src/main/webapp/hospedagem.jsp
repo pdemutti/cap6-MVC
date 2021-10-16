@@ -88,24 +88,24 @@
           </div>
           <!-- MENU DETALHADO -->
           <div class="hero__menu d-none d-md-flex w-100">
-       		<ul class="hero__menu__items">
-              <li class=""> <a href="gastronomia">
+            <ul class="hero__menu__items">
+              <li class=""> <a href="">
                   <img src="./assets/restaurant.svg" alt=""> Gastronomia
                 </a>
               </li>
-              <li class=""> <a href="cultura">
+              <li class=""> <a href="">
                   <img src="./assets/Vector6.svg" alt=""> Cultura
                 </a>
               </li>
-              <li class=""> <a href="alugue-seu-carro">
+              <li class=""> <a href="">
                   <img src="./assets/directions_car.svg" alt=""> Aluguel de Carro
                 </a>
               </li>
-              <li class="hero__menu__items-active"> <a href="hospedagem">
+              <li class="hero__menu__items-active"> <a href="">
                   <img src="./assets/hotel1.svg" alt=""> Hospedagem
                 </a>
               </li>
-              <li class=""> <a href="voos">
+              <li class=""> <a href="">
                   <img src="./assets/flight_takeoff.svg" alt=""> Vôos
                 </a>
               </li>
@@ -147,7 +147,7 @@
           <img class="img-fluid banner" src="assets/banner-motel.png" alt="Banner publicitário" aria>
         </div>
         <div class="col-sm-12 d-flex justify-content-start  justify-content-lg-center col-lg-3 categoria">
-          <h2 class="border-bottom border-success">Nosso Parceiro</h2>
+          <h2 class="border-bottom border-success">Hospedagem</h2>
         </div>
       </div>
 

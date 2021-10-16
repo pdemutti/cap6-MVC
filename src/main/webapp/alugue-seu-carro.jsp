@@ -2,9 +2,6 @@
 <%@page language="java" 
  contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
-<jsp:useBean id="Parceiro" scope="request"
-             type="model.Parceiro"></jsp:useBean>
-
 <html lang="pt-br">
 
 <head>
@@ -147,7 +144,7 @@
           <img class="img-fluid banner" src="assets/banner-motel.png" alt="Banner publicitário" aria>
         </div>
         <div class="col-sm-12 d-flex justify-content-start  justify-content-lg-center col-lg-3 categoria">
-          <h2 class="border-bottom border-success">Nosso Parceiro</h2>
+          <h2 class="border-bottom border-success">Alugue seu carro</h2>
         </div>
       </div>
 
@@ -214,75 +211,6 @@
         </div>
       </div>
       <hr>
-      <section class="parceiro">
-        <header class="parceiro__header">
-          <h3><% out.println(Parceiro.getNome()); %></h3>
-          
-          <span class="parceiro__header__detail">Bar e Restaurante</span>
-        </header>
-
-        <div class="parceiro__detalhes">
-          <figure>
-            <img src="<% out.println(Parceiro.getCaminhoImagem()); %>" alt="Foto do bar do Zé" width="520" />
-            <figcaption>Foto salao principal</figcaption>
-            <br />
-            <h6>Descrição</h6>
-            <p class="parceiro__detalhes__descricao">
-              <% out.println(Parceiro.getDescricao()); %>
-            </p>
-          </figure>
-
-          <div class="parceiro__detalhes_direita">
-          
-            <div class="parceiro__mapa">
-              <h5>Como Chegar</h5>
-              <form onsubmit="return codeAddress(event)">
-                <label>
-                  Digite aqui o seu cep:
-                  <input type="text" name="cep" class="meucep">
-                  <input type="submit" value="como chegar?" >
-                </label>
-              </form>
-              <div class="mapouter">
-                <div class="gmap_canvas">
-                  <iframe class="iframe-maps" width="600" height="450" style="border:0" loading="lazy" allowfullscreen
-                  src="https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJcUFP0B_4zpQRRBE8Byi6Uag&destination=place_id:ChIJS4KFpvpbzpQRNNUIfcX83r4&key=AIzaSyCCE0hFijDgC0JRk59KCj5uMTc7guUCQzo"></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <hr>
-        <h4>Avaliações</h4>
-
-        <div class="card_avaliacao">
-          <p>De: <strong>Fulano</strong></p>
-          <p>Mensagem: Otimo lugar para levar a familia</p>
-          <p>Estrelas: <img class="star-icon" src="./assets/star.svg"><img class="star-icon" src="./assets/star.svg"><img class="star-icon" src="./assets/star.svg"><img class="star-icon" src="./assets/star.svg"></p>
-        </div>
-
-
-        <div class="card_avaliacao">
-          <p>De: <strong>Maria</strong></p>
-          <p>Mensagem: Ambiente agradavel</p>
-          <p>Estrelas: <img class="star-icon" src="./assets/star.svg"><img class="star-icon" src="./assets/star.svg"></p>
-        </div>
-
-        <div class="card_avaliacao">
-          <p>De: <strong>Jaum</strong></p>
-          <p>Mensagem: Bebida sempre gelada!</p>
-          <p>Estrelas: <img class="star-icon" src="./assets/star.svg"><img class="star-icon" src="./assets/star.svg"><img class="star-icon" src="./assets/star.svg"><img class="star-icon" src="./assets/star.svg"><img class="star-icon" src="./assets/star.svg"></p>
-        </div>
-
-        <div class="card_avaliacao">
-          <p>De: <strong>Beltrano</strong></p>
-          <p>Mensagem: Beleza de lugar, so minha comida estava fria</p>
-          <p>Estrelas: <img class="star-icon" src="./assets/star.svg"></p>
-        </div>
-        
-
-      </section>
   </main>
 
   <footer class="rodape">

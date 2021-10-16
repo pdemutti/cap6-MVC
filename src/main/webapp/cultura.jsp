@@ -1,11 +1,9 @@
 
 <%@page language="java" 
  contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-
-<jsp:useBean id="Parceiro" scope="request"
-             type="model.Parceiro"></jsp:useBean>
-
+ 
 <html lang="pt-br">
+
 
 <head>
   <!-- Required meta tags -->
@@ -17,7 +15,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-  <title>Hospedagem - Gulliver Traaveler</title>
+  <title>Cultura - Gulliver Traaveler</title>
   <script src="./geolocation.js"></script>
 </head>
 
@@ -88,7 +86,7 @@
           </div>
           <!-- MENU DETALHADO -->
           <div class="hero__menu d-none d-md-flex w-100">
-       		<ul class="hero__menu__items">
+            <ul class="hero__menu__items">
               <li class=""> <a href="gastronomia">
                   <img src="./assets/restaurant.svg" alt=""> Gastronomia
                 </a>
@@ -147,7 +145,7 @@
           <img class="img-fluid banner" src="assets/banner-motel.png" alt="Banner publicitário" aria>
         </div>
         <div class="col-sm-12 d-flex justify-content-start  justify-content-lg-center col-lg-3 categoria">
-          <h2 class="border-bottom border-success">Nosso Parceiro</h2>
+          <h2 class="border-bottom border-success">Cultura </h2>
         </div>
       </div>
 
@@ -216,19 +214,19 @@
       <hr>
       <section class="parceiro">
         <header class="parceiro__header">
-          <h3><% out.println(Parceiro.getNome()); %></h3>
+          <h3><!--  % out.println(Cultura.getNome()); %--></h3>
           
           <span class="parceiro__header__detail">Bar e Restaurante</span>
         </header>
 
         <div class="parceiro__detalhes">
           <figure>
-            <img src="<% out.println(Parceiro.getCaminhoImagem()); %>" alt="Foto do bar do Zé" width="520" />
+            <img src="<!--  % out.println(Cultura.getDescricao()); %-->" alt="Foto do bar do Zé" width="520" />
             <figcaption>Foto salao principal</figcaption>
             <br />
             <h6>Descrição</h6>
             <p class="parceiro__detalhes__descricao">
-              <% out.println(Parceiro.getDescricao()); %>
+              <!--  % out.println(Cultura.getValor()); %-->
             </p>
           </figure>
 
