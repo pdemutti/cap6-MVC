@@ -17,19 +17,14 @@ public class CulturaServlet extends HttpServlet {
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 		String pagina = "/cultura.jsp";	
-		
-//		ArrayList<Cultura> listaAtracoes = this.criarAtracoes();
-		// RETORNA A TELA DE AVALIACOES
+
 		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(pagina);
 		dispatcher.forward(request, response);
 	}
 	
 	private ArrayList<Atracao> criarAtracoes() {
 		
-		
-		
 		ArrayList<Atracao> atracoes = new ArrayList<Atracao>();
-		
 		
 		return atracoes;
 	}

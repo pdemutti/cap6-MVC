@@ -13,9 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 public class HomeServelet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 		String pagina = "/home.jsp";	
-		
-//		ArrayList<Cultura> listaAtracoes = this.criarAtracoes();
-		// RETORNA A TELA DE AVALIACOES
+
 		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(pagina);
 		dispatcher.forward(request, response);
 	}

@@ -10,14 +10,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/alugue-seu-carro")
-public class AlugueSeuCarroServelet extends HttpServlet{
+public class AlugueSeuCarroServelet extends HttpServlet {
 	
-
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 		String pagina = "/alugue-seu-carro.jsp";	
-		
-//		ArrayList<Cultura> listaAtracoes = this.criarAtracoes();
-		// RETORNA A TELA DE AVALIACOES
+
 		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(pagina);
 		dispatcher.forward(request, response);
 	}
