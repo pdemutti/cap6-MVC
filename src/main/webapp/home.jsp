@@ -1,7 +1,7 @@
 
 <%@page language="java" 
  contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
- 
+
 <html lang="pt-br">
 
 <head>
@@ -98,11 +98,11 @@
                   <img src="./assets/directions_car.svg" alt=""> Aluguel de Carro
                 </a>
               </li>
-      			<li class="hero__menu__items-active"> <a href="parceiro?id=1">
+      			<li class=""> <a href="parceiro?id=1">
                   <img src="./assets/hotel1.svg" alt=""> Entretenimento
                 </a>
               </li>
-              <li class=""> <a href="hospedagem">
+              <li class="hero__menu__items-active"> <a href="hospedagem">
                   <img src="./assets/hotel1.svg" alt=""> Hospedagem
                 </a>
               </li>
@@ -148,7 +148,7 @@
           <img class="img-fluid banner" src="assets/banner-motel.png" alt="Banner publicitário" aria>
         </div>
         <div class="col-sm-12 d-flex justify-content-start  justify-content-lg-center col-lg-3 categoria">
-          <h2 class="border-bottom border-success">Hospedagem</h2>
+          <h2 class="border-bottom border-success">Bem vindo ao Guliver</h2>
         </div>
       </div>
 
@@ -215,6 +215,7 @@
         </div>
       </div>
       <hr>
+      
   </main>
 
   <footer class="rodape">

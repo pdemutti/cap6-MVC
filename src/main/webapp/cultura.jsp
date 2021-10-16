@@ -86,12 +86,12 @@
           </div>
           <!-- MENU DETALHADO -->
           <div class="hero__menu d-none d-md-flex w-100">
-            <ul class="hero__menu__items">
+     		<ul class="hero__menu__items">
               <li class=""> <a href="gastronomia">
                   <img src="./assets/restaurant.svg" alt=""> Gastronomia
                 </a>
               </li>
-              <li class=""> <a href="cultura">
+              <li class="hero__menu__items-active"> <a href="cultura">
                   <img src="./assets/Vector6.svg" alt=""> Cultura
                 </a>
               </li>
@@ -99,7 +99,11 @@
                   <img src="./assets/directions_car.svg" alt=""> Aluguel de Carro
                 </a>
               </li>
-              <li class="hero__menu__items-active"> <a href="hospedagem">
+      			<li class=""> <a href="parceiro">
+                  <img src="./assets/hotel1.svg" alt=""> Entretenimento
+                </a>
+              </li>
+              <li class=""> <a href="hospedagem">
                   <img src="./assets/hotel1.svg" alt=""> Hospedagem
                 </a>
               </li>

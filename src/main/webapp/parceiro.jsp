@@ -101,7 +101,11 @@
                   <img src="./assets/directions_car.svg" alt=""> Aluguel de Carro
                 </a>
               </li>
-              <li class="hero__menu__items-active"> <a href="hospedagem">
+      			<li class="hero__menu__items-active"> <a href="parceiro?id=1">
+                  <img src="./assets/hotel1.svg" alt=""> Entretenimento
+                </a>
+              </li>
+              <li class=""> <a href="hospedagem">
                   <img src="./assets/hotel1.svg" alt=""> Hospedagem
                 </a>
               </li>

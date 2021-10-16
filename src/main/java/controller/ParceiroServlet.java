@@ -14,7 +14,7 @@ import model.Parceiro;
 import model.Usuario;
 
 @WebServlet("/parceiro")
-public class AvaliacoesServlet extends HttpServlet {
+public class ParceiroServlet extends HttpServlet {
 	
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
@@ -27,7 +27,7 @@ public class AvaliacoesServlet extends HttpServlet {
 		if (id == null) {
 			pagina = "/error.jsp";
 		} else {
-			pagina = "/avaliacoes.jsp";
+			pagina = "/parceiro.jsp";
 			
 			try {
 				listaParceiros.get(Integer.parseInt(id));
