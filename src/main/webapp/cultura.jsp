@@ -20,26 +20,7 @@
 </head>
 
 <body>
-  <header class="header d-flex justify-content-md-end">
-
-    <div class="header__lingua">
-      <img class="w-50" src="./assets/br.svg" alt="">
-    </div>
-
-    <div class="header__acessibilidade">
-      <ul class="header__acessibilidade__lista">
-        <li><a href="" class="" aria-label="" tabindex="0">Contraste</a></li>
-        <li><button type="button" class="btn btn-success"></button></li>
-        <li><button type="button" class="btn btn-warning"></button></li>
-        <li><button type="button" class="btn btn-info"></button></li>
-        <li><a href="" class="" aria-label="" tabindex="0">A-</a></li>
-        <li><a href="" class="" aria-label="" tabindex="0">A+</a></li>
-        <li><a href="" class="" aria-label="" tabindex="0"><img src="./assets/brightness_6.svg" alt=""
-              class="w-100"></a></li>
-      </ul>
-    </div>
-  </header>
-
+  <%@include file="includes/header.jsp" %>
   <main role="main">
 
     <!-- HERO, MENU, LOG-IN, BARRA DE PESQUISA -->
