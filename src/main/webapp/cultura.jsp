@@ -48,8 +48,8 @@
 
             <div class="col-md-12 d-flex justify-content-md-end p-0">
               <div class="d-none d-md-block botoes__md">
-                <button class="btn btn__secondary">Cadastrar</button>
-                <button class="btn btn__primary">Login</button>
+                   <a class="btn btn__secondary" href="cadastro"  style="color: white">Cadastrar</a>
+                <a class="btn btn__primary" href="login" style="color: white">Login</a>
               </div>
             </div>
 

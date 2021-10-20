@@ -65,8 +65,8 @@
 
             <div class="col-md-12 d-flex justify-content-md-end p-0">
               <div class="d-none d-md-block botoes__md">
-                <button class="btn btn__secondary">Cadastrar</button>
-                <button class="btn btn__primary">Login</button>
+                 <a class="btn btn__secondary" href="cadastro"  style="color: white">Cadastrar</a>
+                <a class="btn btn__primary" href="login" style="color: white">Login</a>
               </div>
             </div>
 
@@ -149,13 +149,14 @@
                     <div class="card-body">
                         <form action="" method="post" autocomplete="off">
                             <div class="form-group">
-                                <input type="text" class="form-control" name="username" placeholder="Usuario">
+                                <input type="text" class="form-control" name="username" placeholder="Email">
                             </div>
                             <div class="form-group">
                                 <input type="password" class="form-control" name="password" placeholder="Senha">
                             </div>
                             <button type="submit" id="sendlogin" class="btn btn-primary">Entrar</button>
                         </form>
+                        <p><%= session.getAttribute("login") %></p>
                     </div>
                 </div>
             </div>

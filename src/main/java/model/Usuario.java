@@ -12,6 +12,12 @@ public class Usuario {
 		this.email = email;
 		this.senha = senha;
 	}
+	
+	public Usuario(String nome, String email) {
+		super();
+		this.nome = nome;
+		this.email = email;
+	}
 
 	public String getNome() {
 		return nome;

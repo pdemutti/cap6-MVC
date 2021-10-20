@@ -14,11 +14,11 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-  <title>Hospedagem - Gulliver Traaveler</title>
+  <title>Login - Gulliver Traaveler</title>
   <script src="./geolocation.js"></script>
 </head>
 
-<body>
+<body> 
   <header class="header d-flex justify-content-md-end">
 
     <div class="header__lingua">
@@ -38,7 +38,6 @@
       </ul>
     </div>
   </header>
-
   <main role="main">
 
     <!-- HERO, MENU, LOG-IN, BARRA DE PESQUISA -->
@@ -66,7 +65,7 @@
 
             <div class="col-md-12 d-flex justify-content-md-end p-0">
               <div class="d-none d-md-block botoes__md">
-                     <a class="btn btn__secondary" href="cadastro"  style="color: white">Cadastrar</a>
+                 <a class="btn btn__secondary" href="cadastro"  style="color: white">Cadastrar</a>
                 <a class="btn btn__primary" href="login" style="color: white">Login</a>
               </div>
             </div>
@@ -143,12 +142,12 @@
 
     <!-- ANUNCIO E TITULO -->
     <div class="container">
-      <div class="row d-flex flex-row flex-lg-row-reverse">
+    <div class="row d-flex flex-row flex-lg-row-reverse">
         <div class="col-12 col-lg-9 anuncio">
           <img class="img-fluid banner" src="assets/banner-motel.png" alt="Banner publicitário" aria>
         </div>
         <div class="col-sm-12 d-flex justify-content-start  justify-content-lg-center col-lg-3 categoria">
-          <h2 class="border-bottom border-success">Hospedagem</h2>
+          <h2 class="border-bottom border-success">Cadastro </h2>
         </div>
       </div>
 
@@ -215,7 +214,36 @@
         </div>
       </div>
       <hr>
+	<br>
+
+              <div class="row justify-content-center align-items-center" >
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                        <form action="" method="post" autocomplete="off">
+                            <div class="form-group">
+                            	<label>Nome</label>
+                                <input type="text" class="form-control" name="nome" placeholder="Nome">
+                            </div>
+                            <div class="form-group">
+                            	<label>Email</label>
+                                <input type="email" class="form-control" name="email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                            	<label>Senha</label>
+                                <input type="password" class="form-control" name="senha" placeholder="Senha">
+                            </div>
+                            <button type="submit" id="sendlogin" class="btn btn-primary">Cadastrar</button>
+                        </form>
+                        <p><%= session.getAttribute("error") %></p>
+                    </div>
+                </div>
+            </div>
+        </div>
       
+      </div>
+
+
   </main>
 
   <footer class="rodape">

@@ -9,33 +9,40 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import dao.DataSource;
+import dao.UsuarioDAO;
+import model.Usuario;
+
 
 @WebServlet("/login")
 public class Login extends HttpServlet {
+	private UsuarioDAO user = new UsuarioDAO(new DataSource());
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 		String pagina = "/login.jsp";	
+		
+		request.getSession().setAttribute("login", "");
 
 		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(pagina);
 		dispatcher.forward(request, response);
 	}
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-		String pagina = "/error.jsp";
-		System.out.println("username :: " + request.getParameter("username"));
-		System.out.println("password :: " + request.getParameter("password"));
+		String pagina = "/login.jsp";
+
+		Usuario novoUser = new Usuario(null,request.getParameter("username"), request.getParameter("password"));
 		
-		
-		if ( "lucas".equals(request.getParameter("username")) && "lucas".equals(request.getParameter("password"))) {
-			System.out.println("entrei aqui");
-			 pagina = "/home.jsp";
+			
+		if(this.user.read(novoUser) != null) {		
+			pagina = "/home.jsp";
 		} else {
-			 pagina = "/parceiro-n-encontrado.jsp";
-		}
+			request.getSession().setAttribute("login", "Login invalido");
+		};
 		
-		System.out.println(pagina);
 		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(pagina);
 		dispatcher.forward(request, response);
 		
 	}
 }
+
+
